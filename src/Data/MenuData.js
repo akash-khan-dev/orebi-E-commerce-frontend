@@ -20,3 +20,43 @@ export const menuData = [
     linkL: "/contact",
   },
 ];
+export const CategoryData = [
+  {
+    title: "Electronic",
+    link: "/",
+  },
+  {
+    title: "Apple",
+    link: "/",
+  },
+  {
+    title: "Gaming",
+    link: "/",
+  },
+  {
+    title: "Furniture",
+    link: "/",
+  },
+  {
+    title: "Baby Products",
+    link: "/",
+  },
+];
+export const AccountData = [
+  {
+    title: "My Account",
+    link: "/",
+  },
+  {
+    title: "Settings",
+    link: "/",
+  },
+  {
+    title: "Details",
+    link: "/",
+  },
+  {
+    title: "Log Out",
+    link: "/",
+  },
+];
