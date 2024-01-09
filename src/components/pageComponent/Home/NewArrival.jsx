@@ -4,6 +4,7 @@ import Product from "../../common/Product";
 import NewProductOne from "../../../assets/Images/New-1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import SliderButton from "./SliderButton";
 const NewArrival = () => {
   return (
     <>
@@ -40,23 +41,34 @@ const NewArrival = () => {
                 <Product src={NewProductOne} showBadge={true} badgeTile="New" />
               </SwiperSlide>
               <SwiperSlide>
-                <Product src={NewProductOne} showBadge={true} badgeTile="New" />
+                <Product src={NewProductOne} showBadge={true} badgeTile="10%" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Product
+                  src={NewProductOne}
+                  showBadge={false}
+                  badgeTile="New"
+                />
               </SwiperSlide>
               <SwiperSlide>
                 <Product src={NewProductOne} showBadge={true} badgeTile="New" />
               </SwiperSlide>
               <SwiperSlide>
-                <Product src={NewProductOne} showBadge={true} badgeTile="New" />
+                <Product
+                  src={NewProductOne}
+                  showBadge={false}
+                  badgeTile="New"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Product src={NewProductOne} showBadge={true} badgeTile="10%" />
               </SwiperSlide>
               <SwiperSlide>
                 <Product src={NewProductOne} showBadge={true} badgeTile="New" />
               </SwiperSlide>
-              <SwiperSlide>
-                <Product src={NewProductOne} showBadge={true} badgeTile="New" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Product src={NewProductOne} showBadge={true} badgeTile="New" />
-              </SwiperSlide>
+              <div className="slider-button">
+                <SliderButton />
+              </div>
             </Swiper>
           </div>
         </div>
