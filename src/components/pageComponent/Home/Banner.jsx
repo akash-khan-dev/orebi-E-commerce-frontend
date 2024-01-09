@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import bannerImg from "../../../assets/Images/banner.png";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Banner = () => {
@@ -96,19 +97,19 @@ const Banner = () => {
         <div>
           <Slider {...settings}>
             <div>
-              <a href="/">
+              <Link to="/">
                 <img src={bannerImg} alt="banner" />
-              </a>
+              </Link>
             </div>
             <div>
-              <a href="/">
+              <Link to="/">
                 <img src={bannerImg} alt="banner" />
-              </a>
+              </Link>
             </div>
             <div>
-              <a href="/">
+              <Link to="/">
                 <img src={bannerImg} alt="banner" />
-              </a>
+              </Link>
             </div>
           </Slider>
         </div>

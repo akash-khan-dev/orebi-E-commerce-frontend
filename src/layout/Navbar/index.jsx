@@ -6,6 +6,7 @@ import ListItems from "../../components/common/ListItems";
 import { menuData } from "../../Data/MenuData";
 import { useClickOutSite } from "../../Hook/useClickOutSite";
 import HeadingBar from "./HeadingBar";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
