@@ -38,7 +38,7 @@ const Navbar = () => {
                   {menuData?.map((item, index) => (
                     <ListItems
                       key={index}
-                      link={item.linkL}
+                      link={item.link}
                       liStyle="md:mx-4 lg:mx-5"
                       className="hover:text-black hover:font-bold hover:transition-all hover:ease-in-out duration-300 relative after:absolute after:content[''] after:w-[0px] after:h-[3px] after:bg-black after:bottom-[-5px] after:left-0 before:absolute before:content[''] before:w-[0px] before:h-[3px] before:bg-black before:bottom-[-12px] before:left-0 hover:before:w-[20px] hover:after:w-[40px] after:transition-all after:ease-in-out after:duration-300 before:transition-all before:ease-in-out before:duration-300"
                     >
@@ -59,7 +59,7 @@ const Navbar = () => {
                   <Lists className=" absolute top-5 right-0 bg-[#959595] z-30">
                     {menuData?.map((item, index) => (
                       <ListItems
-                        link={item.linkL}
+                        link={item.link}
                         key={index}
                         className="font-primaryFont block py-2 px-12 text-white font-semibold text-sm hover:bg-white transition duration-300 ease-in-out hover:text-black"
                       >

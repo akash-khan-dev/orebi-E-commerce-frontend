@@ -1,23 +1,23 @@
 export const menuData = [
   {
     title: "Home",
-    linkL: "/home",
+    link: "/home",
   },
   {
     title: "Shop",
-    linkL: "/shop",
+    link: "/shop",
   },
   {
     title: "About",
-    linkL: "/pages/about",
+    link: "/pages/about",
   },
   {
     title: "Journal",
-    linkL: "/journal",
+    link: "/journal",
   },
   {
     title: "Contacts",
-    linkL: "/contact",
+    link: "/contact",
   },
 ];
 export const CategoryData = [
