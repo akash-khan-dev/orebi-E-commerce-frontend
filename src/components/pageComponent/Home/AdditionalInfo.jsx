@@ -4,7 +4,7 @@ import { TbReload } from "react-icons/tb";
 const AdditionalInfo = () => {
   return (
     <>
-      <section className="additional-info">
+      <section className="additional-info py-2 lg:py-4 border-b border-[#f0f0f0]">
         <div className="container">
           <div className="flex justify-between items-center">
             <div className="flex gap-1 sm:gap-2 items-center">
