@@ -9,7 +9,7 @@ import SpacialFour from "../../../assets/Images/spacial4.png";
 const SpacialOffer = () => {
   return (
     <>
-      <section className="spacial-offer py-5">
+      <section className="spacial-offer py-5 pb-10  md:pb-14 lg:pb-20">
         <div className="container">
           <div className="heading pb:2 md:pb:4 lg:pb-6">
             <Heading title="Special Offers" />
