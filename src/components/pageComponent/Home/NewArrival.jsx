@@ -2,6 +2,8 @@ import React from "react";
 import Heading from "../../common/Heading";
 import Product from "../../common/Product";
 import NewProductOne from "../../../assets/Images/New-1.png";
+import NewProductTwo from "../../../assets/Images/New-2.png";
+import NewProductThree from "../../../assets/Images/New-3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SliderButton from "./SliderButton";
@@ -13,7 +15,7 @@ const NewArrival = () => {
           <div className="heading pb:2 md:pb:4 lg:pb-6">
             <Heading title={"New Arrivals"} />
           </div>
-          <div className="Product flex gap-6">
+          <div className="Product ">
             <Swiper
               spaceBetween={20}
               slidesPerView={4}
@@ -41,11 +43,11 @@ const NewArrival = () => {
                 <Product src={NewProductOne} showBadge={true} badgeTile="New" />
               </SwiperSlide>
               <SwiperSlide>
-                <Product src={NewProductOne} showBadge={true} badgeTile="10%" />
+                <Product src={NewProductTwo} showBadge={true} badgeTile="10%" />
               </SwiperSlide>
               <SwiperSlide>
                 <Product
-                  src={NewProductOne}
+                  src={NewProductThree}
                   showBadge={false}
                   badgeTile="New"
                 />
@@ -55,13 +57,17 @@ const NewArrival = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <Product
-                  src={NewProductOne}
+                  src={NewProductTwo}
                   showBadge={false}
                   badgeTile="New"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <Product src={NewProductOne} showBadge={true} badgeTile="10%" />
+                <Product
+                  src={NewProductThree}
+                  showBadge={true}
+                  badgeTile="10%"
+                />
               </SwiperSlide>
               <SwiperSlide>
                 <Product src={NewProductOne} showBadge={true} badgeTile="New" />
