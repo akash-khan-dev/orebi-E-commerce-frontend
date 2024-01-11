@@ -7,7 +7,7 @@ import { AccountData } from "../../Data/MenuData";
 import { useClickOutSite } from "../../Hook/useClickOutSite";
 import Lists from "../common/Lists";
 import ListItem from "../common/ListItems";
-import Card from "./Card";
+import AddToCard from "./AddToCard";
 
 const Account = () => {
   const [showAccountMenu, setShowAccountMenu] = useState(false);
@@ -57,7 +57,7 @@ const Account = () => {
             className=" text-[20px] lg:text-[25px]"
           />
           <div className="w-[55px] flex relative">
-            {showCard && <Card openCard={openCard} />}
+            {showCard && <AddToCard openCard={openCard} />}
           </div>
         </div>
       </div>
