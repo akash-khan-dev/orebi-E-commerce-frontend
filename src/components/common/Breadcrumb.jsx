@@ -8,7 +8,7 @@ const Breadcrumb = () => {
     location.pathname.charAt(1).toUpperCase() + location.pathname.slice(2);
   return (
     <>
-      <section className="breadcrumb py-20">
+      <section className="breadcrumb py-8 sm:py-10 md:py-16 lg:py-20">
         <div className="breadcrumb-title">
           <h2 className="font-primaryFont font-bold text-4xl md:text-5xl text-black ">
             {params}
