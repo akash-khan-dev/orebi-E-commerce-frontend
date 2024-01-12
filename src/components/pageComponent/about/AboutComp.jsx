@@ -1,5 +1,4 @@
 import React from "react";
-import Breadcrumb from "../../common/Breadcrumb";
 import about1 from "../../../assets/Images/about1.png";
 import about2 from "../../../assets/Images/about2.png";
 import AboutUs from "./AboutUs";
@@ -8,9 +7,6 @@ const AboutComp = () => {
   return (
     <>
       <div>
-        <div className="bread_crumb">
-          <Breadcrumb />
-        </div>
         <div className="about_product">
           <div className="md:grid md:grid-cols-2 mt-5 gap-x-6">
             <div className="relative mb-10 md:mb-0 group overflow-hidden">
