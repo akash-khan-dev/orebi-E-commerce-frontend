@@ -18,6 +18,7 @@ const ContactForm = () => {
               value=""
               placeholder="Your Name here"
               label="Name"
+              id="name"
             />
             <Input
               name="name"
@@ -26,9 +27,13 @@ const ContactForm = () => {
               value=""
               placeholder="Your email here"
               label="Email"
+              id="email"
             />
             <div className="text-area">
-              <label className="text-black font-primaryFont font-bold text-base ">
+              <label
+                htmlFor="message"
+                className="text-black font-primaryFont font-bold text-base "
+              >
                 Message
               </label>
               <textarea
@@ -38,7 +43,7 @@ const ContactForm = () => {
                 name="message"
                 onChange={""}
                 value={""}
-                id=""
+                id="message"
                 cols="40"
                 rows="3"
                 placeholder="Your message here"

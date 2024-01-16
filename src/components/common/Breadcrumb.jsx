@@ -14,7 +14,7 @@ const Breadcrumb = () => {
             {params}
           </h2>
         </div>
-        <div className="breadcrumb mt-1 flex">
+        <div className="breadcrumb mt-1 sm:mt-2 md:mt-3 lg:mt-4 flex">
           <p className="font-primaryFont font-normal text-xs text-gray">
             <Link to="/">Home</Link>{" "}
             <VscTriangleLeft className="inline-block" /> {params}
