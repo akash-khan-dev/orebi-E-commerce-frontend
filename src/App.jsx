@@ -9,7 +9,8 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
-import Registration from "./pages/Registration/Registration";
+import Registration from "./pages/Registration";
+import Account from "./pages/Account";
 
 function App() {
   const router = createBrowserRouter(
@@ -21,6 +22,7 @@ function App() {
         <Route path="contacts" element={<Contact />}></Route>
         <Route path="login" element={<Login />}></Route>
         <Route path="registration" element={<Registration />}></Route>
+        <Route path="account" element={<Account />}></Route>
       </Route>
     )
   );
