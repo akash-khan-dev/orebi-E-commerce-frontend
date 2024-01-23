@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Registration from "./pages/Registration";
 import Account from "./pages/Account";
+import Cart from "./pages/Cart";
 
 function App() {
   const router = createBrowserRouter(
@@ -23,6 +24,7 @@ function App() {
         <Route path="login" element={<Login />}></Route>
         <Route path="registration" element={<Registration />}></Route>
         <Route path="account" element={<Account />}></Route>
+        <Route path="cart" element={<Cart />}></Route>
       </Route>
     )
   );

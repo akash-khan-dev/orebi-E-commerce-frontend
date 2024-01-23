@@ -56,7 +56,7 @@ const Shop = () => {
   });
   return (
     <>
-      <section className="shop pb-24">
+      <section className="shop pb-10 sm:pb-15 md:pb-20 lg:pb-24">
         <div className="container">
           <div className="breadcrumb">
             <Breadcrumb />
