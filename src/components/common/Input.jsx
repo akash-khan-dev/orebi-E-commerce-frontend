@@ -6,7 +6,7 @@ const Input = ({ name, onChange, value, type, placeholder, label, id }) => {
       <div className="mb-2 sm:mb-3 md:mb-5 lg:mb-6">
         <label
           htmlFor={id}
-          className="text-black font-primaryFont font-bold text-base "
+          className="text-black font-primaryFont font-bold text-base"
         >
           {label}
         </label>
