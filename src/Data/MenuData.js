@@ -1,15 +1,15 @@
 export const menuData = [
   {
     title: "Home",
-    link: "/home",
+    link: "/",
   },
   {
     title: "Shop",
-    link: "/shop",
+    link: "/products",
   },
   {
     title: "About",
-    link: "/pages/about",
+    link: "/about",
   },
   {
     title: "Journal",
@@ -17,7 +17,7 @@ export const menuData = [
   },
   {
     title: "Contacts",
-    link: "/contact",
+    link: "/contacts",
   },
 ];
 export const CategoryData = [

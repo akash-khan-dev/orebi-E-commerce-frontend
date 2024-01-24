@@ -1,6 +1,7 @@
 import React from "react";
 import FormHeading from "../../common/FormHeading";
 import Input from "../../common/Input";
+import Button from "../../common/Button";
 
 const ContactForm = () => {
   return (
@@ -49,14 +50,7 @@ const ContactForm = () => {
                 placeholder="Your message here"
               ></textarea>
             </div>
-            <div className="button">
-              <button
-                type="submit"
-                className=" py-3 md:py-4 px-12 md:px-[77px] bg-black mt-5 md:mt-10 text-white font-bold text-sm font-primaryFont rounded-[10px]"
-              >
-                Post
-              </button>
-            </div>
+            <Button text={"Post"}></Button>
           </form>
         </div>
       </div>

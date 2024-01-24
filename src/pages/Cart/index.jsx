@@ -2,8 +2,19 @@ import React, { useReducer } from "react";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import cardImg from "../../assets/Images/card-prodect.png";
 import { FiMinus, FiPlus } from "react-icons/fi";
+import Button from "../../components/common/Button";
 
 const Cart = () => {
+  const size = [
+    {
+      label: "kjfsdfkje",
+      value: "kjfsdfkje",
+    },
+    {
+      label: "fdfsdfkje",
+      value: "fdfsdfkje",
+    },
+  ];
   const handleQuantity = (state, action) => {
     switch (action.payload) {
       case "increase": {
@@ -55,7 +66,7 @@ const Cart = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-[#F0F0F0] text-sm lg:text-base">
+                <tr className="product border-b border-[#F0F0F0] text-sm lg:text-base">
                   <td className=" flex flex-col items-center py-7 lg:flex-row lg:gap-7 lg:px-5">
                     <span className="cursor-pointer text-2xl text-black font-bold">
                       &times;
@@ -69,8 +80,10 @@ const Cart = () => {
                       Product Name
                     </span>
                   </td>
-                  <td className="px-5 py-7 font-primaryFont font-bold text-xl">
-                    $44.00
+                  <td>
+                    <span className="px-5 py-7 font-primaryFont font-bold text-xl">
+                      $44.00
+                    </span>
                   </td>
                   <td className="flex w-1/2 flex-col items-center justify-between border border-[#F0F0F0] px-4 py-1 lg:flex-row">
                     <span
@@ -94,8 +107,67 @@ const Cart = () => {
                     $ {quantity.count * 44}.00
                   </td>
                 </tr>
+                <tr className="coupon">
+                  <td className="flex flex-col items-center gap-4 py-5 lg:flex-row">
+                    <select className="block w-[60%] ml-3 focus:outline-none border border-[#F0F0F0] py-2 font-primaryFont font-normal text-sm text-gray">
+                      <option selected>SIZE</option>
+                      {/* <option value="US">United States</option> */}
+                    </select>
+                    <span className="font-primaryFont text-sm font-bold">
+                      Apply coupon
+                    </span>
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <span className="pr-4 text-right font-primaryFont text-sm font-bold">
+                      Update cart
+                    </span>
+                  </td>
+                </tr>
               </tbody>
             </table>
+            <div className="total-calculation w-[30%] ml-auto mt-12">
+              <div className="total-header text-right pb-4">
+                <h5 className="font-primaryFont font-bold text-xl text-black">
+                  Cart totals
+                </h5>
+              </div>
+              <div className="total-body">
+                <div className="sub_total flex">
+                  <div className="w-2/4 py-2 pl-4 border border-[#F0F0F0]">
+                    <h6 className="font-primaryFont font-bold text-base text-black">
+                      Subtotal
+                    </h6>
+                  </div>
+                  <div className="w-2/4 py-2 pl-4 border border-[#F0F0F0]">
+                    <span className="font-primaryFont font-normal text-base text-gray">
+                      389.99 $
+                    </span>
+                  </div>
+                </div>
+                <div className="total flex">
+                  <div className="w-2/4 py-2 pl-4 border border-[#F0F0F0]">
+                    <h6 className="font-primaryFont font-bold text-base text-black">
+                      Total
+                    </h6>
+                  </div>
+                  <div className="w-2/4 py-2 pl-4 border border-[#F0F0F0]">
+                    <span className="font-primaryFont font-normal text-base text-black">
+                      389.99 $
+                    </span>
+                  </div>
+                </div>
+                <div className="button mt-7">
+                  <button
+                    type="button"
+                    className="font-primaryFont font-bold text-sm w-44 h-10  text-[#2b2b2b] overflow-hidden shadow-lg border-[#2b2b2b] before:block before:absolute before:translate-x-[90%] before:inset-0 before:bg-[#2b2b2b] before:hover:translate-x-0 before:duration-300 before:rounded-s-full before:-z-10 after:-z-10 after:rounded-e-full after:duration-300 after:hover:translate-x-0 after:block after:absolute after:-translate-x-[90%] after:inset-0  after:bg-[#2b2b2b] relative inline-block hover:text-white"
+                  >
+                    Proceed to Checkout
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
