@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FormHeading from "../../common/FormHeading";
 import Input from "../../common/Input";
 import { IoEyeOffOutline, IoEye } from "react-icons/io5";
+import Button from "../../common/Button";
 const LoginForm = () => {
   const [showPass, setShowPass] = useState(false);
   return (
@@ -40,9 +41,7 @@ const LoginForm = () => {
                 </div>
               </div>
             </div>
-            <button className=" py-3 px-[50px] md:py-4 md:px-[65px] lg:py-4 lg:px-[74px] mt-5 lg:mt-2 border border-[#2b2b2b] bg-[#2b2b2b] md:bg-white md:hover:bg-[#2b2b2b] text-white md:text-black hover:text-white transition duration-300 rounded-md font-primaryFont font-bold text-sm ">
-              Log in
-            </button>
+            <Button text={"Log in"} />
           </form>
         </div>
       </div>
