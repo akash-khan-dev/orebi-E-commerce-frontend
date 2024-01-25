@@ -47,7 +47,7 @@ const Cart = () => {
           <div className="bread-crumb">
             <Breadcrumb />
           </div>
-          <div className="cart-product">
+          <div className="cart-product ">
             <table className="w-full border border-[#F0F0F0] text-left">
               <thead className="bg-[#F5F5F3]">
                 <tr>
@@ -133,7 +133,7 @@ const Cart = () => {
                   Cart totals
                 </h5>
               </div>
-              <div className="total-body">
+              <div className="total-body ">
                 <div className="sub_total flex">
                   <div className="w-2/4 py-2 pl-4 border border-[#F0F0F0]">
                     <h6 className="font-primaryFont font-bold text-base text-black">

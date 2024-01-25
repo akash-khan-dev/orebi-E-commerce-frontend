@@ -3,7 +3,7 @@ import React from "react";
 const Input = ({ name, onChange, value, type, placeholder, label, id }) => {
   return (
     <>
-      <div className="mb-2 sm:mb-3 md:mb-5 lg:mb-6">
+      <div>
         <label
           htmlFor={id}
           className="text-black font-primaryFont font-bold text-base"
